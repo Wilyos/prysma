@@ -32,7 +32,7 @@
     border-color: #FFD000;
     padding: 3px;
     margin-top: 5%;
-    margin-left: 49%;
+    margin-left: 48%;
     
    
 }
@@ -55,7 +55,7 @@
 }
 
 
-h1,h2,h3,h4,h5,font{
+h1,h2,h3,h4,h5,font, span{
     font-family: 'Roboto', sans-serif;
     font-variant: small-caps;
     color: #FFD000;
@@ -130,6 +130,7 @@ h1,h2,h3,h4,h5,font{
 /* vista principal */
 body{
     background-color: black;
+    overflow: auto;
 }
 .main_comercial{
     float: right;
@@ -156,29 +157,50 @@ body{
 /*portafolio */
 .portafolio{
 display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
-  grid-auto-rows: minmax(100px, 400px);
+  grid-auto-rows: auto;
 }
 .imagen_portafolio{
-    image-orientation: from-image;
-    max-width: 50%;
+    max-width: 60%;
     height: 15%;
+    padding: 2px;
+    
 } 
+
+
+.text_portafolio{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-variant: small-caps;
+    font-weight: bolt;
+    font-size: x-large;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color:  #FFD000;
+    right: 0;
+    justify-content: center;
+    margin-top: 150PX;
+    margin-left: 100px;
+
+}
 
 .portafolio_1{
     grid-column: 1/5;
   grid-row: 1;
+grid-auto-flow: dense;
 }
 
 .portafolio_2{
-    grid-column: 1/5;
-  grid-row: 2;
+    grid-column: 2/2;
+  grid-row: 1;
+  
 }
 .portafolio_3{
     grid-column: 1/5;
-  grid-row: 3;
-} .portafolio_4{
-    grid-column: 1/5;
-  grid-row: 4;
+  grid-row: 2;
+}
+ .portafolio_4{
+    grid-column: 2/2;
+  grid-row: 2;
 }
