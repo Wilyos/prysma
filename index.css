@@ -81,6 +81,8 @@ h1,h2,h3,h4,h5,font, span{
     font-weight: bolt;
     font-size:large;
     color: white;
+    text-decoration: underline;
+    text-decoration-color:#FFD000;
     
   }
   
@@ -155,7 +157,7 @@ body{
     margin-top: 15px;
     margin-bottom: 25px;
 }
-/*portafolio */
+/*portafolio - VISTAS PORTAFOLIO*/
 
 .main_portafolio{
     position: absolute;
@@ -168,9 +170,10 @@ body{
 }
 .portafolio{
 display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(2, 1fr 30%);
   gap: 10px;
   grid-auto-rows: minmax(250 500);
+  grid-auto-flow: dense
 }
 .imagen_portafolio{
     display: flex;
@@ -192,6 +195,7 @@ display: grid;
     text-decoration: underline;
     text-decoration-color:  #FFD000;
     right: 0;
+    margin-left: 200px;
     justify-content: center;
     margin-top: 150PX;
     
@@ -199,38 +203,60 @@ display: grid;
 }
 
 .portafolio_1{
-    grid-column: 1/5;
+    grid-column: 1/2;
   grid-row: 1;
-grid-auto-flow: dense;
 }
 
 .portafolio_2{
-    grid-column: 7/8;
-  grid-row: 1;
-  
+    grid-column: 2/2;
+  grid-row: 1; 
 }
 .portafolio_3{
-    grid-column: 1/5;
+    grid-column: 1/2;
   grid-row: 2;
 }
  .portafolio_4{
-    grid-column: 7/8;
+    grid-column: 2/2;
   grid-row: 2;
 }
 
 .portafolio_5{
-    grid-column: 1/5;
+    grid-column: 1/2;
     grid-row: 3;
 }
 .portafolio_6{
-    grid-column: 7/8;
+    grid-column: 2/2;
     grid-row: 3;
 }
 .portafolio_7{
-    grid-column: 1/5;
+    grid-column: 1/2;
     grid-row: 4;
 }
 .portafolio_8{
-    grid-column: 7/8;
+    grid-column: 2/2;
     grid-row: 4;
+}
+.portafolio_9{
+    grid-column: 1/2;
+    grid-row: 5;
+}
+.portafolio_10{
+    grid-column: 2/2;
+    grid-row: 5;
+}
+
+.text_vistasPorta{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-variant: small-caps;
+    font-weight: bolt;
+    font-size: 100%;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color:  #FFD000;
+    right: 0;
+    margin-left: 100px;
+    justify-content: center;
+    margin-top: 150PX;
+
 }
