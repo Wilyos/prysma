@@ -173,7 +173,8 @@ display: grid;
   grid-template-columns: repeat(2, 1fr 30%);
   gap: 10px;
   grid-auto-rows: minmax(250 500);
-  grid-auto-flow: dense
+  grid-auto-flow: dense;
+  margin-left:5vw;
 }
 .imagen_portafolio{
     display: flex;
